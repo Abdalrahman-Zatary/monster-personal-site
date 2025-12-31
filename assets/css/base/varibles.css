@@ -1,0 +1,65 @@
+:root {
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #aaaaaa;
+  --text-color-therd: #000;
+  --text-color-forth: #ccc;
+  --main-transition: 0.3s;
+  --section-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --scetion-padding-top: 100px;
+  --scetion-padding-bottom: 100px;
+}
+.redmode {
+  --main-color: #e51e18;
+  --rgb-main-color: 229 30 24;
+  --primary-color: #a51116;
+  --secondary-color: #121212;
+  --rgb-secondary-color: 0 0 0;
+  --secondary-color-alt: #1e1e1e;
+  --img-monster: url(../images/Gallrey/mode/monster-red.webp);
+  --img-monster-full: url(../images/Gallrey/mode/monster-full-red.jpg);
+  --img-monster-project: url(../images/Gallrey/mode/monster-full-red.jpg);
+}
+.purplemode {
+  --main-color: #705add;
+  --rgb-main-color: 112 90 221;
+  --primary-color: #5f46dd;
+  --secondary-color: #111113;
+  --rgb-secondary-color: 17 17 19;
+  --secondary-color-alt: #202023;
+  --img-monster: url(../images/Gallrey/mode/monster-porpule.webp);
+  --img-monster-full: url(../images/Gallrey/mode/monster-full-porpule.jpg);
+  --img-monster-project: url(../images/Gallrey/mode/monster-full-porpule.jpg);
+}
+.yullowmode {
+  --main-color: #fcbd00;
+  --rgb-main-color: 252 189 0;
+  --primary-color: #b18500;
+  --secondary-color: #131311;
+  --rgb-secondary-color: 19 17 17;
+  --secondary-color-alt: #232320;
+  --img-monster: url(../images/Gallrey/mode/monster-yullow.webp);
+  --img-monster-full: url(../images/Gallrey/mode/monster-full-yullow.jpg);
+  --img-monster-project: url(../images/Gallrey/mode/monster-full-yullow.jpg);
+}
+.bluemode {
+  --main-color: #2196f3;
+  --rgb-main-color: 33 150 243;
+  --primary-color: #1787e0;
+  --secondary-color: #050508;
+  --rgb-secondary-color: 5 5 8;
+  --secondary-color-alt: #19191c;
+  --img-monster: url(../images/Gallrey/mode/monster-blue.webp);
+  --img-monster-full: url(../images/Gallrey/mode/monster-full-blue.jpg);
+  --img-monster-project: url(../images/Gallrey/mode/monster-full-blue.jpg);
+}
+.greenmode {
+  --main-color: #2cff81;
+  --rgb-main-color: 44 255 129;
+  --primary-color: #00c04d;
+  --secondary-color: #121212;
+  --rgb-secondary-color: 18 18 18;
+  --secondary-color-alt: #101812;
+  --img-monster: url(../images/Gallrey/mode/monster-green.webp);
+  --img-monster-full: url(../images/Gallrey/mode/monster-full-green.jpg);
+  --img-monster-project: url(../images/Gallrey/mode/monster-full-green.jpg);
+}
