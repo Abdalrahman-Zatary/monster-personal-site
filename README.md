@@ -5,6 +5,9 @@ Monster is my official personal portfolio — a single-page interactive experien
 ## Screenshots
 ![Desktop Screenshot](./assets/images/Gallrey/mode/monster-full-red.jpg)
 
+## Demo 
+https://monster-az.netlify.app/
+
 ## What the site includes
 - Header with anchor links to sections (single-page navigation)  
 - Hero section: short intro about me (front-end dev) + CTA buttons (Contact / View Projects) and animated portrait (CSS & Canvas)  
@@ -56,6 +59,6 @@ Monster is my official personal portfolio — a single-page interactive experien
 
 ## How To Run Locally
 ```bash
-git clone https://github.com/Abdalrahman-Zatary/portfolio-studio.git
-cd portfolio-studio
+git clone https://github.com/Abdalrahman-Zatary/monster-personal-site.git
+cd monster-personal-site
 open index.html  
