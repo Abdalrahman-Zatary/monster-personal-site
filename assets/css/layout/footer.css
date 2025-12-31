@@ -1,0 +1,133 @@
+/* Start Footer */
+.footer {
+  contain: paint;
+  padding-top: calc(var(--scetion-padding-top) / 2);
+  background-color: #191919;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+}
+canvas#neuro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: .95;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.footer article h2 {
+  font-family: "Orbitron", sans-serif;
+  color: var(--text-color-primary);
+  font-size: 2.6rem;
+  margin: 0 0 20px;
+}
+.footer article .social {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .footer article .social {
+    justify-content: center;
+  }
+}
+.footer article .social li a {
+  background-color: #313131;
+  color: #b9b9b9;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  transition: calc(var(--main-transition) * 2);
+}
+.footer article .social li .linkedin:hover {
+  background-color: #0a66c2;
+}
+.footer article .social li .instagram:hover {
+  background-color: #e1306c;
+}
+.footer article .social li .githup:hover {
+  background-color: #181717;
+}
+.footer article .social li a svg {
+  transition: calc(var(--main-transition) * 2);
+}
+.footer article .social li a:hover svg {
+  transform: scale(1.3);
+}
+.footer article p {
+  color: var(--text-color-secondary);
+  line-height: 2;
+  margin: 15px 0;
+}
+.footer nav ul li {
+  padding: 15px 0;
+  transition: var(--main-transition);
+}
+.footer nav ul li:not(:last-child) {
+  border-bottom: 1px solid var(--primary-color);
+}
+.footer nav ul li:hover {
+  padding-left: 10px;
+}
+.footer nav ul li svg {
+  color: var(--main-color);
+  margin-right: 5px;
+}
+.footer nav ul li a {
+  color: var(--text-color-secondary);
+  transition: var(--main-transition);
+}
+.footer nav ul li:hover a {
+  color: var(--text-color-primary);
+}
+.footer .box .line {
+  color: var(--text-color-secondary);
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.footer .box .line svg {
+  color: var(--main-color);
+  font-size: 25px;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .footer .box .line {
+    flex-direction: column;
+  }
+  .footer .box .line i {
+    margin: 0 0 15px;
+  }
+}
+.footer .box .line .info {
+  flex: 1;
+}
+.footer .box .line .info span {
+  line-height: 1.7;
+  display: block;
+}
+.footer .copyright {
+  color: var(--text-color-secondary);
+  text-align: center;
+  padding: 25px 0; 
+  margin: 50px 0 0;
+  border-top: 1px solid var(--primary-color);
+}
+.footer .copyright strong {
+  color: var(--main-color);
+}
+/* End Footer */
