@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Folder Base -->
+    <link rel="stylesheet" href="./assets/css/base/glopal.css">
+    <link rel="stylesheet" href="./assets/css/base/varibles.css">
+
+    <!-- components loading -->
+    <link rel="stylesheet" href="./assets/css/components/loading.css">
+    
+		<!-- Googl Font -->
+    <!-- All -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- vendors -->
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="./assets/css/vendors/all.min.css">
+    <link rel="stylesheet" href="./assets/css/vendors/swiper-bundle.min.css">
+
+    <!-- layout -->
+    <link rel="stylesheet" href="./assets/css/layout/header.css">
+    <link rel="stylesheet" href="./assets/css/layout/hero.css">
+    <link rel="stylesheet" href="./assets/css/layout/footer.css">
+
+    <!-- components -->
+    <link rel="stylesheet" href="./assets/css/components/titles.css">
+    <link rel="stylesheet" href="./assets/css/components/settings-box.css">
+
+    <!-- Sections -->
+    <link rel="stylesheet" href="./assets/css/sections.css">
+		<title>Monster</title>
+	</head>
+	<body id="app" class="redmode">
+    <!-- Start Loading -->
+    <div class="loading" role="status" aria-live="polite" aria-label="Loading">
+      <div class="container-loading">
+        <div class="box-load">
+          <div class="cube"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Loading -->
+    <!-- Start Settings Box-->
+    <div class="settings-box">
+      <div class="gear">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+      <div class="settings-container">
+        <h4>colors:</h4>
+        <ul class="modes">
+          <li data-mode="redmode" style="--color-mode: #e51e18;"></li>
+          <li data-mode="purplemode" style="--color-mode: #705add;"></li>
+          <li data-mode="yullowmode" style="--color-mode: #fcbd00;"></li>
+          <li data-mode="bluemode" style="--color-mode: #2196f3;"></li>
+          <li data-mode="greenmode" style="--color-mode: #2cff81;"></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Settings Box-->
+    <!-- Start Navbar-->
+		<header class="navbar">
+      <div class="container">
+        <a class="logo" href="#index.html">Monster</a>
+        <ul class="nav-links">
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#features">Features</a></li>
+          <li >
+            <a id="drop-down">Other Links</a>
+            <!-- Start Drop List -->
+            <div class="drop-list">
+              <div class="image-list">
+                <img src="./assets/images/Hero/megamenu.webp" loading="lazy" 
+                width="523" height="308" alt="megamenu">
+              </div>
+              <ul class="links-list">
+                <li>
+                  <a href="#testimonials"><i class="far fa-comments fa-fw"></i>Testimonials</a>
+                </li>
+                <li>
+                  <a href="#team-members"><i class="far fa-user fa-fw"></i>Team Members</a>
+                </li>
+                <li>
+                  <a href="#services"><i class="far fa-building fa-fw"></i>Services</a>
+                </li>
+                <li>
+                  <a href="#how-it-works"><i class="far fa-clipboard fa-fw"></i>How It Works</a>
+                </li>
+              </ul>
+              <ul class="links-list">
+                <li>
+                  <a href="#our-skills"><i class="far fa-check-circle fa-fw"></i>Our Skills</a>
+                </li>
+                <li>
+                  <a href="#events"><i class="far fa-calendar fa-fw"></i>Events</a>
+                </li>
+                <li>
+                  <a href="#top-projects"><i class="far fa-play-circle fa-fw"></i>Top Projects</a>
+                </li>
+                <li>
+                  <a href="#discount"><i class="fas fa-percent fa-fw"></i>Request A Discount</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Drop List -->
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- End Navbar-->
+    <!-- Start Hero -->
+    <main class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>CODE THE FUTURE WITH NEOW</h1>
+            <h2>Frontend Developer</h2>
+            <p>I’m Abdulrahman Zatary, a mid-level Frontend Developer focused on modern web design.
+            I work with HTML, CSS, JavaScript, and libraries like Tailwind and Bootstrap, 
+            while currently learning React. My work stands out through clean design, attention to detail,
+            and smooth animations. I enjoy large-scale projects and aim to reach a very advanced level in this field.</p>
+            <div class="btn-group">
+              <a href="#gallery" class="btn-hero btn-primary">
+                <i class="fas fa-rocket"></i> View Projects
+              </a>
+              <a href="#discount" class="btn-hero">
+                <i class="fas fa-paper-plane"></i> Contact Me
+              </a>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-wrapper">
+              <img src="./assets/images/Hero/hero-abdo.webp" alt="Profile" class="profile-img">
+              <canvas class="particle-canvas" aria-hidden="true"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Hero -->
+    <!-- Start Articals -->
+    <section id="articles" class="articals">
+      <h2 class="main-title">
+        <span class="inner-main-title">Articles</span>
+      </h2>
+      <div class="container">
+        <figure class="box">
+          <div class="face front">
+            <div class="img-box">
+              <img src="./assets/images/Articels/article-1.webp" loading="lazy" 
+              width="1024" height="1024" alt="Articel-1">
+            </div>
+            <figcaption class="content">
+              <h3>Clean Code</h3>
+              <p>
+                Name variables clearly, keep functions small, remove complexity — readability is your priority.
+              </p>
+            </figcaption>
+            <div class="line"></div>
+            <div class="info">
+              <a class="read-more">Read More</a>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="face back">
+            <div class="title">
+              <h2>Clean Code</h2>
+              <button class="btn-back">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </button>
+            </div>
+            <p>Clean code is not about aesthetics—it’s about instant clarity.
+            Clear variable and function names reduce cognitive load.
+            Breaking tasks into small, focused functions lowers complexity and makes bugs easier
+            to detect. Your ultimate goal is writing code that others can understand instantly.</p>
+          </div>
+        </figure>
+        <figure class="box">
+          <div class="face front">
+            <div class="img-box">
+              <img src="./assets/images/Articels/article-2.webp" loading="lazy" 
+              width="1024" height="1024" alt="Articel-2">
+            </div>
+            <figcaption class="content">
+              <h3>Project Structure</h3>
+              <p>
+                Organize files by feature, document conventions, and keep a simple, 
+                navigable dependency structure.
+              </p>
+            </figcaption>
+            <div class="line"></div>
+            <div class="info">
+              <a class="read-more">Read More</a>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="face back">
+            <div class="title">
+              <h2> Project Structure</h2>
+              <button class="btn-back">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </button>
+            </div>
+            <p>Structuring your project by feature instead of file type
+            makes development much smoother. Grouping components, styles,
+            and logic within feature folders improves navigation and clarity.
+            Documenting internal conventions keeps the entire team aligned,
+            reducing confusion and boosting productivity.</p>
+          </div>
+        </figure>
+        <figure class="box">
+          <div class="face front">
+            <div class="img-box">
+              <img src="./assets/images/Articels/article-3.webp" loading="lazy" 
+              width="1024" height="1024" alt="Articel-3">
+            </div>
+            <figcaption class="content">
+              <h3>JavaScript</h3>
+              <p>
+                When write short, clear functions, handle async carefully,
+                and minimize, costly DOM reflows.
+              </p>
+            </figcaption>
+            <div class="line"></div>
+            <div class="info">
+              <a class="read-more">Read More</a>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="face back">
+              <div class="title">
+                <h2>JavaScript</h2>
+                <button class="btn-back">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </button>
+              </div>
+            <p>Professional JavaScript revolves around clean,
+            simple functions and efficient DOM handling. Short, 
+            focused functions are easier to test and maintain. 
+            Managing asynchronous operations properly with async/await reduces bugs, 
+            while minimizing DOM manipulation boosts overall performance.</p>
+          </div>
+        </figure>
+        <figure class="box">
+          <div class="face front">
+            <div class="img-box">
+              <img src="./assets/images/Articels/article-4.webp" loading="lazy" 
+              width="1024" height="1024" alt="Articel-4">
+            </div>
+            <figcaption class="content">
+              <h3>CSS</h3>
+              <p>
+                Use Flexbox, Grid and CSS variables for responsive, maintainable layouts; keep styles separate from logic.
+              </p>
+            </figcaption>
+            <div class="line"></div>
+            <div class="info">
+              <a class="read-more">Read More</a>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="face back">
+            <div class="title">
+              <h2>CSS</h2>
+              <button class="btn-back">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </button>
+            </div>
+            <p>Modern CSS provides powerful tools like Flexbox
+            and Grid for building flexible, responsive layouts with
+            minimal complexity. CSS Variables help you maintain consistent
+            colors and spacing across your project. These techniques reduce clutter
+            and dramatically improve maintainability, especially in large-scale applications.</p>
+          </div>
+        </figure>
+        <figure class="box">
+          <div class="face front">
+            <div class="img-box">
+              <img src="./assets/images/Articels/article-5.webp" loading="lazy" 
+              width="1024" height="1024" alt="Articel-5">
+            </div>
+            <figcaption class="content">
+              <h3>HTML</h3>
+              <p>
+                Build pages with semantic tags, clear headings and ARIA attributes to boost SEO and user experience.
+              </p>
+            </figcaption>
+            <div class="line"></div>
+            <div class="info">
+              <a class="read-more">Read More</a>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="face back">
+            <div class="title">
+              <h2>HTML</h2>
+              <button class="btn-back">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </button>
+            </div>
+            <p>Semantic HTML is more than structure—it’s the foundation 
+            of a well-built website. Using elements like header, section,
+            and article helps search engines understand your content and
+            improves accessibility. A clear, meaningful structure makes your page easier to read,
+            maintain, and scale over time.</p>
+          </div>
+        </figure>
+        <figure class="box">
+          <div class="face front">
+            <div class="img-box">
+              <img src="./assets/images/Articels/article-6.webp" loading="lazy" 
+              width="1024" height="1024" alt="Articel-6">
+            </div>
+            <figcaption class="content">
+              <h3>React</h3>
+              <p>
+                Rely on hooks for state, favor composition over inheritance, and use code-splitting to improve performance.
+              </p>
+            </figcaption>
+            <div class="line"></div>
+            <div class="info">
+              <a class="read-more">Read More</a>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="face back">
+            <div class="title">
+              <h2>React</h2>
+              <button class="btn-back">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </button>
+            </div>
+            <p>In React, hooks are essential for modern and flexible
+            state management. Composition is preferred over 
+            inheritance because it encourages reusable components. 
+            Code splitting reduces bundle size and improves load time. 
+            These practices help your React application stay fast, 
+            scalable, and clean.</p>
+          </div>
+        </figure>
+        <figure class="box">
+          <div class="face front">
+            <div class="img-box">
+              <img src="./assets/images/Articels/article-7.webp" loading="lazy" 
+              width="1024" height="1024" alt="Articel-7">
+            </div>
+            <figcaption class="content">
+              <h3>Dev Tools</h3>
+              <p>
+                performance profiling, source maps, and network monitoring to diagnose bugs and speed up apps.
+              </p>
+            </figcaption>
+            <div class="line"></div>
+            <div class="info">
+              <a class="read-more">Read More</a>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="face back">
+            <div class="title">
+              <h2>Dev Tools</h2>
+              <button class="btn-back">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </button>
+            </div>
+            <p>DevTools provides powerful features for debugging
+            and performance analysis. You can track execution time,
+            monitor network activity, and inspect DOM changes in real time.
+            Using these tools consistently speeds up development and uncovers
+            performance issues before they reach users.</p>
+          </div>
+        </figure>
+        <figure class="box">
+          <div class="face front">
+            <div class="img-box">
+              <img src="./assets/images/Articels/article-8.webp" loading="lazy" 
+              width="1024" height="1024" alt="Articel-8">
+            </div>
+            <figcaption class="content">
+              <h3>Tailwind</h3>
+              <p>
+                Compose UIs with utility classes, extract repeated components, and enable JIT to shrink bundle size.
+              </p>
+            </figcaption>
+            <div class="line"></div>
+            <div class="info">
+              <a class="read-more">Read More</a>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="face back">
+            <div class="title">
+              <h2>Tailwind</h2>
+              <button class="btn-back">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </button>
+            </div>
+            <p>Tailwind enables fast UI development using ready 
+            utility classes. However, organization matters—extract 
+            repeated patterns into components for clarity. 
+            Enabling JIT mode keeps your bundle small and speeds up workflow. 
+            When used thoughtfully, Tailwind becomes an extremely powerful styling tool.</p>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <div class="spacks"></div>
+    <!-- End Articals -->
+    <!-- Start Gallery -->
+    <section id="gallery" class="gallery">
+      <h2 class="main-title">
+        <span class="inner-main-title">Gallery</span>
+      </h2>
+      <div class="container">
+        <article style="--main-color-gallery: #31d35c;" class="card-gallery"
+        data-img1="./assets/images/Gallrey/gallery-1.webp" data-img2="./assets/images/Gallrey/gallery-full-1.jpg">
+          <div class="shadow"></div>
+          <div class="data">
+            <h2 class="name">easybank</h2>
+            <span class="hestory">2024 / 11 / 19</span>
+          </div>
+          <div class="clip">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="info">
+            <div class="content">
+              <h2 class="title">easybank</h2>
+              <p class="description">
+                A modern and responsive landing page for a digital bank that 
+                showcases its services, features, and currency-related solutions.
+              </p>
+              <div>
+                <a href="https://easybank-2025.netlify.app/" target="_blank" class="button">View</a>
+                <a href="https://github.com/Abdalrahman-Zatary/easybank-landing-page" target="_blank" class="button">Gethub</a>
+              </div>
+            </div>
+            <ul class="bulided">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </article>
+        <article style="--main-color-gallery: #e0e5ec;" class="card-gallery" 
+        data-img1="./assets/images/Gallrey/gallery-8.webp" data-img2="./assets/images/Gallrey/gallery-full-8.jpg">
+          <div class="shadow"></div>
+          <div class="data">
+            <h2 class="name">Leon</h2>
+            <span class="hestory">2024 / 12 / 17</span>
+          </div>
+          <div class="clip">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="info">
+            <div class="content">
+              <h2 class="title">Leon</h2>
+              <p class="description">
+                A clean and simple single-page personal website for Leon showcasing services,
+                portfolio/gallery, and an about section.
+              </p>
+              <div>
+                <a href="https://leon-portoflio.netlify.app/" target="_blank" class="button">View</a>
+                <a href="https://github.com/Abdalrahman-Zatary/leon-portfolio" target="_blank" class="button">Gethub</a>
+              </div>
+            </div>
+            <ul class="bulided">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </article>
+        <article style="--main-color-gallery: #F7C59F;" class="card-gallery" 
+        data-img1="./assets/images/Gallrey/gallery-3.webp" data-img2="./assets/images/Gallrey/gallery-full-3.jpg">
+          <div class="shadow"></div>
+          <div class="data">
+            <h2 class="name">Laura’s Closet</h2>
+            <span class="hestory">2025 / 7 / 2</span>
+          </div>
+          <div class="clip">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="info">
+            <div class="content">
+              <h2 class="title">Laura’s Closet</h2>
+              <p class="description">
+                A single-page landing website for Laura's Closet, 
+                a simple clothing store showcasing collections, brands, promotions, 
+                and service features.
+              </p>
+              <div>
+                <a href="https://lauras-closet-model.netlify.app/" target="_blank" class="button">View</a>
+                <a href="https://github.com/Abdalrahman-Zatary/lauras-closet" target="_blank" class="button">Gethub</a>
+              </div>
+            </div>
+            <ul class="bulided">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>JS</li>
+            </ul>
+          </div>
+        </article>
+        <article style="--main-color-gallery: #f87d09;" class="card-gallery" 
+        data-img1="./assets/images/Gallrey/gallery-5.webp" data-img2="./assets/images/Gallrey/gallery-full-5.jpg">
+          <div class="shadow"></div>
+          <div class="data">
+            <h2 class="name">Portfolio</h2>
+            <span class="hestory">2025 / 8 / 4</span>
+          </div>
+          <div class="clip">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="info">
+            <div class="content">
+              <h2 class="title">Portfolio</h2>
+              <p class="description">
+                A professional single-page portfolio showcasing services, design features,
+                an interactive filterable gallery, carousel, video section, about, skills, 
+                testimonials, pricing for courses, contact and footer.
+              </p>
+              <div>
+                <a href="https://portfolio-studio-az.netlify.app/" target="_blank" class="button">View</a>
+                <a href="https://github.com/Abdalrahman-Zatary/portfolio-studio" target="_blank" class="button">Gethub</a>
+              </div>
+            </div>
+            <ul class="bulided">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>Swiper</li>
+            </ul>
+          </div>
+        </article>
+        <article style="--main-color-gallery: #f7c11d;" class="card-gallery" 
+        data-img1="./assets/images/Gallrey/gallery-4.webp" data-img2="./assets/images/Gallrey/gallery-full-4.jpg">
+          <div class="shadow"></div>
+          <div class="data">
+            <h2 class="name">Food House</h2>
+            <span class="hestory">2025 / 9 / 7</span>
+          </div>
+          <div class="clip">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="info">
+            <div class="content">
+              <h2 class="title">Food House</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A totam hic doloremque voluptas!
+                Ad consectetur non id doloribus fuga repudiandae! Quam tempora quidem voluptatem fugit ipsum.
+              </p>
+              <a class="available">In development</a>
+            </div>
+            <ul class="bulided">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+          </div>
+        </article>
+        <article style="--main-color-gallery: #C9B092;" class="card-gallery" 
+        data-img1="./assets/images/Gallrey/gallery-2.webp" data-img2="./assets/images/Gallrey/gallery-full-2.jpg">
+          <div class="shadow"></div>
+          <div class="data">
+            <h2 class="name">MVMT</h2>
+            <span class="hestory">2025 / 10 / 27</span>
+          </div>
+          <div class="clip">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="info">
+            <div class="content">
+              <h2 class="title">MVMT</h2>
+              <p class="description">
+                A starter website for MVMT, an e-commerce store focused on mobile phone accessories.
+                The project currently includes a header and a carousel, with plans to expand it into a full multi-page online store.
+              </p>
+              <div>
+                <a href="https://mvmt-store.netlify.app/" target="_blank" class="button">View</a>
+                <a href="https://github.com/Abdalrahman-Zatary/mvmt-store" target="_blank" class="button">Gethub</a>
+              </div>
+            </div>
+            <ul class="bulided">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Tailwind</li>
+              <li>JS</li>
+            </ul>
+          </div>
+        </article>
+        <article style="--main-color-gallery: #EA3D41;" class="card-gallery" 
+        data-img1="./assets/images/Gallrey/gallery-7.webp" data-img2="./assets/images/Gallrey/gallery-full-7.jpg">
+          <div class="shadow"></div>
+          <div class="data">
+            <h2 class="name">DRINKS</h2>
+            <span class="hestory">2025 / 11 / 7</span>
+          </div>
+          <div class="clip">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="info">
+            <div class="content">
+              <h2 class="title">DRINKS</h2>
+              <p class="description">
+                A minimal landing page for a juice shop featuring a header and a GSAP-powered carousel. 
+                This is a starter project built with HTML, CSS and JavaScript (GSAP for animations).
+              </p>
+              <div>
+                <a href="https://drinks-shop.netlify.app/" target="_blank" class="button">View</a>
+                <a href="https://github.com/Abdalrahman-Zatary/drinks-shop" target="_blank" class="button">Gethub</a>
+              </div>
+            </div>
+            <ul class="bulided">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>GSAP</li>
+            </ul>
+          </div>
+        </article>
+        <article style="--main-color-gallery: var(--main-color);" class="card-gallery">
+          <div class="img1" style="--img1: var(--img-monster)"></div>
+          <div class="img2" style="--img2: var(--img-monster-full)"></div>
+          <div class="shadow"></div>
+          <div class="data">
+            <h2 class="name">MONSTAR</h2>
+            <span class="hestory">2025 / 11 / 23</span>
+          </div>
+          <div class="clip">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="info">
+            <div class="content">
+              <h2 class="title">MONSTAR</h2>
+              <p class="description">
+                Official personal portfolio of a frontend developer - interactive single-page 
+                with animation hero, 3D article cards, filterable gallery, canvas effects, Swiper carousels, 
+                Lottie & GSAP animation.
+              </p>
+              <div>
+                <a href="https://github.com/Abdalrahman-Zatary/monster-personal-site" target="_blank" class="button">Gethub</a>
+              </div>
+            </div>
+            <ul class="bulided">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>Swiper</li>
+              <li>Lottie</li>
+              <li>GSAP</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- End Gallery -->
+    <!-- Start Features -->
+    <section id="features" class="features">
+      <h2 class="main-title">
+        <span class="inner-main-title">Features</span>
+      </h2>
+      <div class="container">
+        <figure class="card-features">
+          <div class="poster">
+            <img src="./assets/images/Features/features-3.webp" loading="lazy"
+            alt="features-1">
+          </div>
+          <figcaption class="details">
+            <h2 class="title">
+              <span style="z-index: 4;">T</span>
+              <span style="z-index: 3;">i</span>
+              <span style="z-index: 2;">m</span>
+              <span style="z-index: 1;">e</span>
+            </h2>
+            <h3 class="sub-title">Fast Delivery</h3>
+            <div class="info">
+              <p>We optimize development flow to deliver projects
+              quickly without sacrificing quality. Through
+              efficient planning and smart tooling, we ensure
+              rapid turnaround times and dependable results for
+              every front-end task we handle.</p>
+            </div>
+            <button class="btn-more">More</button>
+            <h4>Points :</h4>
+            <ul class="about-card">
+              <li> 
+                <i class="fas fa-angle-double-right"></i>
+                Optimized workflows
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i>
+                Reliable deadlines
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i>
+                Quick project launch.
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="card-features">
+          <div class="poster">
+            <img src="./assets/images/Features/features-2.webp" loading="lazy"
+            alt="features-2">
+          </div>
+          <figcaption class="details">
+            <h2 class="title">
+              <span style="z-index: 7;">P</span>
+              <span style="z-index: 6;">a</span>
+              <span style="z-index: 5;">s</span>
+              <span style="z-index: 4;">s</span>
+              <span style="z-index: 3;">i</span>
+              <span style="z-index: 2;">o</span>
+              <span style="z-index: 1;">n</span>
+            </h2>
+            <h3 class="sub-title">Driven by Passion</h3>
+            <div class="info">
+              <p>Our work is fueled by genuine passion for clean
+              design and modern front-end development. We focus on creativity,
+              problem-solving, and delivering interfaces that reflect dedication,
+              innovation, and true love for building digital experiences.</p>
+            </div>
+            <button class="btn-more">More</button>
+            <h4>Points :</h4>
+            <ul class="about-card">
+              <li> 
+                <i class="fas fa-angle-double-right"></i>
+                Creative problem-solving.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i>
+                User-focused decisions.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i>
+                Care in every detail.
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="card-features">
+          <div class="poster">
+            <img src="./assets/images/Features/features-1.webp" loading="lazy"
+            alt="features-3">
+          </div>
+          <figcaption class="details">
+            <h2 class="title">
+              <span style="z-index: 7;">Q</span>
+              <span style="z-index: 6;">u</span>
+              <span style="z-index: 5;">a</span>
+              <span style="z-index: 4;">l</span>
+              <span style="z-index: 3;">i</span>
+              <span style="z-index: 2;">t</span>
+              <span style="z-index: 1;">y</span>
+            </h2>
+            <h3 class="sub-title">Premium Quality</h3>
+            <div class="info">
+              <p>We deliver highly polished interfaces with precise details,
+              ensuring full responsiveness and smooth user experience.
+              Every element is crafted carefully to maintain consistency,
+              accessibility, professional standard across all devices 
+              and browsers.</p>
+            </div>
+            <button class="btn-more">More</button>
+            <h4>Points :</h4>
+            <ul class="about-card">
+              <li> 
+                <i class="fas fa-angle-double-right"></i>
+                Pixel-perfect execution
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i>
+                Fully responsive layout
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i>
+                Clean and scalable code
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <div class="spacks"></div> 
+    <!-- End Features -->
+    <!-- Start Testimonials -->
+    <section id="testimonials" class="testimonials">
+      <h2 class="main-title">
+        <span class="inner-main-title">Testimonials</span>
+      </h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box-testimonial">
+              <i class="fa-solid fa-quote-right"></i>
+              <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Odio nihil in atque quasi laboriosam veritatis placeat odit!
+                Perspiciatis blanditiis consequatur fugiat sunt tempore officiis ullam,
+                dicta quibusdam laboriosam possimus qui exercitationem magni et dolor.</p>
+                <div class="details">
+                  <div class="img-comment">
+                    <img src="./assets/images/Testimonials/testimonials-1.webp" loading="lazy" 
+                    width="500" height="500" alt="person-1">
+                  </div>
+                  <h3>Someone Famous<br><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box-testimonial">
+              <i class="fa-solid fa-quote-right"></i>
+              <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Odio nihil in atque quasi laboriosam veritatis placeat odit!
+                Perspiciatis blanditiis consequatur fugiat sunt tempore officiis ullam,
+                dicta quibusdam laboriosam possimus qui exercitationem magni et dolor.</p>
+                <div class="details">
+                  <div class="img-comment">
+                    <img src="./assets/images/Testimonials/testimonials-2.webp" loading="lazy" 
+                    width="500" height="500" alt="person-2">
+                  </div>
+                  <h3>Someone Famous<br><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box-testimonial">
+              <i class="fa-solid fa-quote-right"></i>
+              <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Odio nihil in atque quasi laboriosam veritatis placeat odit!
+                Perspiciatis blanditiis consequatur fugiat sunt tempore officiis ullam,
+                dicta quibusdam laboriosam possimus qui exercitationem magni et dolor.</p>
+                <div class="details">
+                  <div class="img-comment">
+                    <img src="./assets/images/Testimonials/testimonials-3.webp" loading="lazy" 
+                    width="500" height="500" alt="person-3">
+                  </div>
+                  <h3>Someone Famous<br><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box-testimonial">
+              <i class="fa-solid fa-quote-right"></i>
+              <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Odio nihil in atque quasi laboriosam veritatis placeat odit!
+                Perspiciatis blanditiis consequatur fugiat sunt tempore officiis ullam,
+                dicta quibusdam laboriosam possimus qui exercitationem magni et dolor.</p>
+                <div class="details">
+                  <div class="img-comment">
+                    <img src="./assets/images/Testimonials/testimonials-4.webp" loading="lazy" 
+                    width="500" height="500" alt="person-4">
+                  </div>
+                  <h3>Someone Famous<br><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box-testimonial">
+              <i class="fa-solid fa-quote-right"></i>
+              <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Odio nihil in atque quasi laboriosam veritatis placeat odit!
+                Perspiciatis blanditiis consequatur fugiat sunt tempore officiis ullam,
+                dicta quibusdam laboriosam possimus qui exercitationem magni et dolor.</p>
+                <div class="details">
+                  <div class="img-comment">
+                    <img src="./assets/images/Testimonials/testimonials-5.webp" loading="lazy" 
+                    width="500" height="500" alt="person-5">
+                  </div>
+                  <h3>Someone Famous<br><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box-testimonial">
+              <i class="fa-solid fa-quote-right"></i>
+              <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Odio nihil in atque quasi laboriosam veritatis placeat odit!
+                Perspiciatis blanditiis consequatur fugiat sunt tempore officiis ullam,
+                dicta quibusdam laboriosam possimus qui exercitationem magni et dolor.</p>
+                <div class="details">
+                  <div class="img-comment">
+                    <img src="./assets/images/Testimonials/testimonials-6.webp" loading="lazy" 
+                    width="500" height="500" alt="person-6">
+                  </div>
+                  <h3>Someone Famous<br><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box-testimonial">
+              <i class="fa-solid fa-quote-right"></i>
+              <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Odio nihil in atque quasi laboriosam veritatis placeat odit!
+                Perspiciatis blanditiis consequatur fugiat sunt tempore officiis ullam,
+                dicta quibusdam laboriosam possimus qui exercitationem magni et dolor.</p>
+                <div class="details">
+                  <div class="img-comment">
+                    <img src="./assets/images/Testimonials/testimonials-7.webp" loading="lazy" 
+                    width="500" height="500" alt="Person-7">
+                  </div>
+                  <h3>Someone Famous<br><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- End Testimonials -->
+    <!-- Start Team -->
+    <section id="team-members" class="team">
+      <h2 class="main-title">
+        <span class="inner-main-title">Team Members</span>
+      </h2>
+      <div class="container">
+        <article class="box-team" data-color="clr1">
+          <div class="img-person">
+            <img src="./assets/images/Team Mempers/Person-1.webp" loading="lazy" 
+            width="500" height="643" alt="person-1">
+          </div>
+          <div class="glass">
+            <h3>Someone<span>SEO Expert</span></h3>
+            <ul>
+              <a href="#" style="--i: 1;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" style="--i: 2;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" style="--i: 3;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </ul>
+          </div>
+        </article>
+        <article class="box-team" data-color="clr2">
+          <div class="img-person">
+            <img src="./assets/images/Team Mempers/Person-2.webp" loading="lazy" 
+            width="500" height="643" alt="person-2">
+          </div>
+          <div class="glass">
+            <h3>Someone<span>Backend Developer</span></h3>
+            <ul>
+              <a href="#" style="--i: 1;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" style="--i: 2;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" style="--i: 3;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </ul>
+          </div>
+        </article>
+        <article class="box-team" data-color="clr3">
+          <div class="img-person">
+            <img src="./assets/images/Team Mempers/Person-3.webp" loading="lazy" 
+            width="500" height="643" alt="person-3">
+          </div>
+          <div class="glass">
+            <h3>Someone<span>Frontend Developer</span></h3>
+            <ul>
+              <a href="#" style="--i: 1;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" style="--i: 2;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" style="--i: 3;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </ul>
+          </div>
+        </article>
+        <article class="box-team" data-color="clr4">
+          <div class="img-person">
+            <img src="./assets/images/Team Mempers/Person-4.webp" loading="lazy" 
+            width="500" height="643" alt="person-4">
+          </div>
+          <div class="glass">
+            <h3>Someone<span>Full Stack</span></h3>
+            <ul>
+              <a href="#" style="--i: 1;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" style="--i: 2;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" style="--i: 3;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </ul>
+          </div>
+        </article>
+        <article class="box-team" data-color="clr5">
+          <div class="img-person">
+            <img src="./assets/images/Team Mempers/Person-5.webp" loading="lazy" 
+            width="500" height="643" alt="person-5">
+          </div>
+          <div class="glass">
+            <h3>Someone<span>Backend Developer</span></h3>
+            <ul>
+              <a href="#" style="--i: 1;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" style="--i: 2;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" style="--i: 3;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </ul>
+          </div>
+        </article>
+        <article class="box-team" data-color="clr6">
+          <div class="img-person">
+            <img src="./assets/images/Team Mempers/Person-6.webp" loading="lazy" 
+            width="500" height="643" alt="person-6">
+          </div>
+          <div class="glass">
+            <h3>Someone<span>Frontend Developer</span></h3>
+            <ul>
+              <a href="#" style="--i: 1;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" style="--i: 2;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" style="--i: 3;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </ul>
+          </div>
+        </article>
+        <article class="box-team" data-color="clr7">
+          <div class="img-person">
+            <img src="./assets/images/Team Mempers/Person-7.webp" loading="lazy" 
+            width="1024" height="1024" alt="person-7">
+          </div>
+          <div class="glass">
+            <h3>Someone<span>UI & UX Designer</span></h3>
+            <ul>
+              <a href="#" style="--i: 1;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" style="--i: 2;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" style="--i: 3;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </ul>
+          </div>
+        </article>
+        <article class="box-team" data-color="clr8">
+          <div class="img-person">
+            <img src="./assets/images/Team Mempers/Person-8.webp" loading="lazy" 
+            width="1024" height="1024" alt="person-8">
+          </div>
+          <div class="glass">
+            <h3>Someone<span>Graphic Designer</span></h3>
+            <ul>
+              <a href="#" style="--i: 1;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" style="--i: 2;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" style="--i: 3;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="spacks"></div>
+    <!-- End Team -->
+    <!-- Start Skills -->
+    <section id="our-skills" class="skills">
+      <h2 class="main-title">
+        <span class="inner-main-title">Our Skills</span>
+      </h2>
+      <div class="container">
+        <div class="skills-our">
+          <div class="circle" data-degree="93" data-color="#ff5722">
+            <h2 class="number">93<span>%</span></h2>
+            <h4>HTML</h4>
+          </div>
+          <div class="circle" data-degree="91" data-color="#1e88ff">
+            <h2 class="number">91<span>%</span></h2>
+            <h4>CSS</h4>
+          </div>
+          <div class="circle" data-degree="79" data-color="#fcbd00">
+            <h2 class="number">79<span>%</span></h2>
+            <h4>JS</h4>
+          </div>
+          <div class="circle" data-degree="83" data-color="#f0f">
+            <h2 class="number">83<span>%</span></h2>
+            <h4>Sass</h4>
+          </div>
+        </div>
+        <div class="skills-our">     
+          <div class="lottie" id="codingSlide" data-lottie="./assets/lottie/Coding-Slide.json" style="width: 350px; height: 350px;"></div>
+        </div>
+        <div class="skills-our">
+          <div class="circle" data-degree="88" data-color="#0ff">
+            <h2 class="number">88<span>%</span></h2>
+            <h4>Tailwind</h4>
+          </div>
+          <div class="circle" data-degree="90" data-color="#9c4dff">
+            <h2 class="number">90<span>%</span></h2>
+            <h4>Bootstrap</h4>
+          </div>
+          <div class="circle" data-degree="86" data-color="#f00">
+            <h2 class="number">86<span>%</span></h2>
+            <h4>Git & Gethub</h4>
+          </div>
+          <div class="circle" data-degree="11" data-color="#0f0">
+            <h2 class="number">11<span>%</span></h2>
+            <h4>React</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills -->
+    <!-- Start Services -->
+    <section id="services" class="services">
+      <h2 class="main-title">
+        <span class="inner-main-title">Services</span>
+      </h2>
+      <div class="container">
+        <artical class="card-service">
+          <i class="fas fa-user-shield"></i>
+          <h2>01<small>Security</small></h2>
+          <div class="clip">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </artical>
+        <artical class="card-service">
+          <i class="fas fa-tools"></i>
+          <h2>02<small>Fixing Issues</small></h2>
+          <div class="clip">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </artical>
+        <artical class="card-service">
+          <i class="fas fa-map-marked-alt"></i>
+          <h2>03<small>Location</small></h2>
+          <div class="clip">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </artical>
+        <artical class="card-service">
+          <i class="fas fa-laptop-code"></i>
+          <h2>04<small>Coding</small></h2>
+          <div class="clip">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </artical>
+        <artical class="card-service">
+          <i class="fas fa-bullhorn"></i>
+          <h2>05<small>Marketing</small></h2>
+          <div class="clip">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </artical>
+        <artical class="card-service">
+          <i class="fas fa-palette"></i>
+          <h2>06<small>Art</small></h2>
+          <div class="clip">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </artical>
+      </div>
+    </section> 
+    <div class="spacks"></div> 
+    <!-- End Services -->
+    <!-- Start Works -->
+    <section id="how-it-works" class="works">
+      <h2 class="main-title">
+        <span class="inner-main-title">How It Works ?</span>
+      </h2>
+      <div class="container">
+        <div class="lottie" id="programmer" data-lottie="./assets/lottie/Programmer.json" 
+        style="width: 100%; height: 100%;"></div>
+        <div class="content">
+          <article class="box-work">
+            <img src="./assets/images/How it work/work-steps-1.png" loading="lazy" 
+            alt="work-1">
+            <figcaption class="text">
+              <h3>Business Analysis</h3>
+              <p>
+                I analyze user behavior and product metrics to translate data into actionable UI improvements,
+                prioritize features, and ensure design decisions drive user engagement and conversion.
+              </p>
+            </figcaption>
+          </article>
+          <article class="box-work">
+            <img src="./assets/images/How it work/work-steps-2.png" loading="lazy" 
+            alt="work-2">
+            <figcaption class="text">
+              <h3>Architecture</h3>
+              <p>
+                I design scalable frontend architectures with component-based patterns,
+                state management, and performance optimizations to ensure maintainable, fast,
+                and resilient user interfaces across devices.
+              </p>
+            </figcaption>
+          </article>
+          <article class="box-work">
+            <img src="./assets/images/How it work/work-steps-3.png" loading="lazy" 
+            alt="work3">
+            <figcaption class="text">
+              <h3>Developement</h3>
+              <p>
+                I build responsive, accessible frontends using modern frameworks,
+                clean modular code, and automated testing to deliver pixel-perfect interfaces that
+                are performant and easy to maintain.
+              </p>
+            </figcaption>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- End Works -->
+    <!-- Start Events -->
+    <section id="events" class="events">
+      <h2 class="main-title">
+        <span class="inner-main-title">Latest Events</span>
+      </h2>
+      <div class="container">
+        <div class="info">
+          <div id="clock" class="timing">
+            <div class="timing-oul">
+              <div id="dayDots" style="--color-time: #f0f;"></div>
+              <div id="hrDots" style="--color-time: #ff2972;"></div>
+            </div>
+            <div class="timing-oul">
+              <div id="minDots" style="--color-time: #fee800;"></div>
+              <div id="secDots" style="--color-time: #04fc43;"></div>
+            </div>
+          </div>
+          <article class="text">
+            <h2>Tech Masters Event 2026</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut
+              adipisci quam ratione aliquam excepturi nulla in harum, veritatis porro Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Impedit, quidem doloribus adipisci animi aperiam reiciendis?
+            </p>
+          </article>
+        </div>
+        <div class="subscribe">
+          <form action="">
+            <input type="email" name="mail" placeholder="Enter Your Email">
+            <div class="submit">
+              <input type="submit" name="send" value="Subscribe">
+            </div> 
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="spacks"></div> 
+    <!-- End Events -->
+    <!-- Start Projects -->
+    <section id="top-projects" class="projects">
+      <h2 class="main-title">
+        <span class="inner-main-title">Top Projects</span>
+      </h2>
+      <div class="container-project">
+        <div class="box-projects">
+          <!-- box 1 -->
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-2.jpg);" data-text="MVMT"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-3.jpg);" data-text="Laura’s Closet"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-4.jpg);" data-text="Food House"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-5.jpg);" data-text="Portfolio"></div>
+          <div class="item" style="--img-prjects: var(--img-monster-project);" data-text="Monstar"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-7.jpg);" data-text="Drinks"></div>
+          <!-- box copy 2 -->
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-2.jpg);" data-text="MVMT"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-3.jpg);" data-text="Laura’s Closet"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-4.jpg);" data-text="Food House"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-5.jpg);" data-text="Portfolio"></div>
+          <div class="item" style="--img-prjects: var(--img-monster-project);" data-text="Monstar"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-7.jpg);" data-text="Drinks"></div>
+          <!-- box copy 3 -->
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-2.jpg);" data-text="MVMT"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-3.jpg);" data-text="Laura’s Closet"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-4.jpg);" data-text="Food House"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-5.jpg);" data-text="Portfolio"></div>
+          <div class="item" style="--img-prjects: var(--img-monster-project);" data-text="Monstar"></div>
+          <div class="item" style="--img-prjects: url(../images/Gallrey/gallery-full-7.jpg);" data-text="Drinks"></div>
+        </div>
+      </div>
+    </section> 
+    <!-- End Projects -->
+    <!-- Start Discount -->
+    <section id="discount" class="discount">
+      <h2 class="main-title">
+        <span class="inner-main-title">Request</span>
+      </h2>
+      <div class="container-form">
+        <div class="curved-shape"></div>
+        <div class="curved-shape-sec"></div>
+        <div class="form-box login">
+          <h2 class="animation" style="--D: 0; --S: 21;">About me</h2>
+          <form action="#">
+            <div class="input-box animation" style="--D: 1; --S: 22;">
+              <input type="text" required>
+              <label for="">Username</label>
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="input-box animation" style="--D: 2; --S: 23;">
+              <input type="text" required>
+              <label for="">Massage</label>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="input-box animation" style="--D: 3; --S: 24;">
+              <button class="btn-form" type="submit">Send</button>
+            </div>
+            <div class="regi-link animation" style="--D: 4; --S: 25;">
+              <p>To contect the company ? <a class="sign-up-link">Work for</a></p>
+            </div>
+          </form>
+        </div>
+        <div class="info-content login">
+          <h2 class="animation" style="--D: 0; --S: 20;">WELCOME BACK!</h2>
+          <p class="animation" style="--D: 1; --S: 21;">Here you can send me feedback and you can submit a request to have a website created for you.</p>
+        </div>
+        <div class="form-box register">
+          <h2 class="animation" style="--li: 17; --S:0;">Company</h2>
+          <form action="#">
+            <div class="input-box animation" style="--li: 18; --S: 1;">
+              <input type="text" required>
+              <label for="">Username</label>
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="input-box animation" style="--li: 19; --S: 2;">
+              <input type="text" required>
+              <label for="">Phone number</label>
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="input-box animation" style="--li: 20; --S: 3;">
+              <input type="text" required>
+              <label for="">Massage</label>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="input-box animation" style="--li: 21; --S: 4;">
+              <button class="btn-form" type="submit">Register</button>
+            </div>
+            <div class="regi-link animation" style="--li: 22; --S: 5;">
+              <p>To contact with ? <a class="sign-in-link">Me</a></p>
+            </div>
+          </form>
+        </div>
+        <div class="info-content register">
+          <h2 class="animation" style="--li: 17; --S: 0;">WELCOME BACK!</h2>
+          <p class="animation" style="--li: 18; --S: 1;">Here you can contact the company to create a website for you.</p>
+        </div>
+      </div>
+    </section> 
+    <!-- End Discount -->
+    <!-- Start Footer -->
+    <footer class="footer">
+      <canvas id="neuro"></canvas>
+      <div class="container">
+        <article class="box">
+          <h2>Monster</h2>
+          <ul class="social">
+            <li>
+              <a class="linkedin" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a class="instagram" href="https://www.instagram.com/abd_alrahman_zatary?igsh=cGxpNjl0ZXUzNGtj" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a class="githup" href="https://github.com/Abdalrahman-Zatary" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+          </ul>
+          <p>
+            © 2025 Monster — Showcasing my work and expertise in modern frontend web development.
+          </p>
+        </article>
+        <nav class="box">
+          <ul>
+            <li>
+              <i class="fas fa-angle-double-right"></i>
+              <a href="https://portfolio-studio-az.netlify.app/" target="_blank">Portfolio</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i>
+              <a href="#">Food House</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i>
+              <a href="https://drinks-shop.netlify.app/" target="_blank">Drinks</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i>
+              <a href="https://lauras-closet-model.netlify.app/" target="_blank">Laura’s Closet</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i>
+              <a href="https://mvmt-store.netlify.app/" target="_blank">MVMT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="box">
+          <div class="line">
+            <i class="fas fa-map-marker-alt fa-fw"></i>
+            <div class="info">
+              <span>Syria Aleppo Sabil Masaken Area Building No.16</span>
+            </div>
+          </div>
+          <div class="line">
+            <i class="fas fa-clock fa-fw"></i>
+            <div class="info">
+              <span>Business Hours: From 10:00 To 18:00</span>
+            </div>
+          </div>
+          <div class="line">
+            <i class="fas fa-phone-volume fa-fw"></i>
+            <div class="info">
+              <span>+962933556442</span>
+              <span>+962981723381</span>
+            </div>
+          </div>
+        </div>
+        <div class="box footer-gallery">
+          <div class="lottie" id="digital" data-lottie="./assets/lottie/Digital Marketing.json" 
+          style="width: 100%; height: 100%;"></div>
+        </div>
+      </div>
+      <p class="copyright">Made With: <strong>Abdalrahman Zatary</strong></p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Loading Page -->
+    <script src="./assets/js/components/loading.js"></script>
+
+    <!-- libs -->
+    <!-- font awsome -->
+    <script src="./assets/js/libs/all.min.js"></script>
+    <!-- lottie -->
+    <script src="./assets/js/libs/lottie.min.js"></script>
+    <!-- swiper -->
+    <script src="./assets/js/libs/swiper-bundle.min.js"></script>
+    <script src="./assets/js/libs/vanilla-tilt.js"></script>
+    <!-- gsap -->
+    <script src="./assets/js/libs/gsap.min.js"></script>
+    <script src="./assets/js/libs/ScrollTrigger.min.js"></script>
+
+    <!-- modules -->
+    <script src="./assets/js/modules/lib-runner.js"></script>
+    <script src="./assets/js/modules/hero-effect.js"></script>
+    <script src="./assets/js/modules/gallrey-effect.js"></script>
+    <script type="x-shader/x-fragment" id="vertShader">
+      precision mediump float;
+
+      varying vec2 vUv;
+      attribute vec2 a_position;
+
+      void main() {
+        vUv = .5 * (a_position + 1.);
+        gl_Position = vec4(a_position, 0.0, 1.0);
+      }
+    </script>
+    <script type="x-shader/x-fragment" id="fragShader">
+      precision mediump float;
+
+      varying vec2 vUv;
+      uniform float u_time;
+      uniform float u_ratio;
+      uniform vec2 u_pointer_position;
+      uniform float u_scroll_progress;
+
+      uniform vec3 u_primaryColor;
+
+      vec2 rotate(vec2 uv, float th) {
+        return mat2(cos(th), sin(th), -sin(th), cos(th)) * uv;
+      }
+
+      float neuro_shape(vec2 uv, float t, float p) {
+        vec2 sine_acc = vec2(0.);
+        vec2 res = vec2(0.);
+        float scale = 8.;
+
+        for (int j = 0; j < 15; j++) {
+          uv = rotate(uv, 1.);
+          sine_acc = rotate(sine_acc, 1.);
+          vec2 layer = uv * scale + float(j) + sine_acc - t;
+          sine_acc += sin(layer) + 2.4 * p;
+          res += (.5 + .5 * cos(layer)) / scale;
+          scale *= (1.2);
+        }
+        return res.x + res.y;
+      }
+
+      void main() {
+        vec2 uv = .5 * vUv;
+        uv.x *= u_ratio;
+
+        vec2 pointer = vUv - u_pointer_position;
+        pointer.x *= u_ratio;
+        float p = clamp(length(pointer), 0., 1.);
+        p = .5 * pow(1. - p, 2.);
+
+        float t = .001 * u_time;
+        vec3 color = vec3(0.);
+
+        float noise = neuro_shape(uv, t, p);
+
+        noise = 1.2 * pow(noise, 3.);
+        noise += pow(noise, 10.);
+        noise = max(.0, noise - .5);
+        noise *= (1. - length(vUv - .5));
+
+        vec3 base = u_primaryColor;
+        vec3 dynamic = base * (0.8 + 0.4 * vec3(cos(3. * u_scroll_progress)));
+        color = dynamic;
+
+        color = color * noise;
+
+        gl_FragColor = vec4(color, noise);
+      }
+    </script>
+    <script src="./assets/js/modules/footer-effect.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+	</body>
+</html>
