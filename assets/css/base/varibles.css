@@ -19,7 +19,7 @@
   --img-monster-full: url(../images/Gallrey/mode/monster-full-red.jpg);
   --img-monster-project: url(../images/Gallrey/mode/monster-full-red.jpg);
 }
-.purplemode {
+/* .purplemode {
   --main-color: #705add;
   --rgb-main-color: 112 90 221;
   --primary-color: #5f46dd;
@@ -62,4 +62,4 @@
   --img-monster: url(../images/Gallrey/mode/monster-green.webp);
   --img-monster-full: url(../images/Gallrey/mode/monster-full-green.jpg);
   --img-monster-project: url(../images/Gallrey/mode/monster-full-green.jpg);
-}
+} */

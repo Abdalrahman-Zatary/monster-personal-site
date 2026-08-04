@@ -19,46 +19,6 @@ btns.forEach((btn) => {
   };
 });
 
-// Settings Box to website
-const settings = document.querySelector('.settings-box ');
-const gear = document.querySelector('.settings-box .gear');
-
-gear.addEventListener("click", () => {
-  settings.classList.toggle('move-open');
-});
-
-// dots mods color
-const modesCercels = document.querySelectorAll('.modes li');
-const savedIndex = localStorage.getItem('activeItem');
-
-if (savedIndex !== null) {
-  modesCercels[savedIndex].classList.add('active');
-}
-  modesCercels.forEach((item, index) => {
-    item.addEventListener("click", () => {
-      modesCercels.forEach((i) => {
-        i.classList.remove("active");
-      });
-      item.classList.add("active");
-      localStorage.setItem("activeItem", index);
-    });
-  });
-
-// modes colors
-document.body.classList.add(localStorage.getItem('pageColor') || 'redmode');
-
-let classesList = [];
-
-for (let i = 0; i < modesCercels.length; i++) {
-  classesList.push(modesCercels[i].getAttribute('data-mode'));
-
-  modesCercels[i].addEventListener('click', function() {
-    document.body.classList.remove(...classesList);
-    document.body.classList.add(this.getAttribute('data-mode'));
-    localStorage.setItem('pageColor', this.getAttribute('data-mode'));
-  }, false);
-}
-
 // Artecls show flip card
 document.addEventListener('click', (e) => {
   const read = e.target.closest('.read-more');
