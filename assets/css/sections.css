@@ -635,151 +635,11 @@ div.img2 {
   border-radius: 8px;
 }
 /* End Testimonials */
-/* Start Team */
-.team {
-  padding-top: var(--scetion-padding-top);
-  padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color-alt);
-  transition: var(--main-transition);
-  overflow-x: hidden;
-}
-.team:has(.box-team[data-color="clr1"]:hover) {
-  background-color: #2a1b31;
-}
-.team:has(.box-team[data-color="clr2"]:hover) {
-  background-color: #172e17;
-}
-.team:has(.box-team[data-color="clr3"]:hover) {
-  background-color: #161f27;
-}
-.team:has(.box-team[data-color="clr4"]:hover) {
-  background-color: #433516;
-}
-.team:has(.box-team[data-color="clr5"]:hover) {
-  background-color: #39253b;
-}
-.team:has(.box-team[data-color="clr6"]:hover) {
-  background-color: #311112;
-}
-.team:has(.box-team[data-color="clr7"]:hover) {
-  background-color: #2c2c2c;
-}
-.team:has(.box-team[data-color="clr8"]:hover) {
-  background-color: #260d38;
-}
-.team .container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-.team .box-team {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: calc(var(--main-transition) * 2);
-}
-.box-team .img-person {
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-  border: 4px solid rgba(0 0 0 / 20%);
-}
-.box-team .img-person img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: calc(var(--main-transition) * 2);
-  border-radius: 10px;
-}
-.box-team:hover .img-person img {
-  opacity: 0.5;
-}
-.box-team .glass {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(#fff2, transparent);
-  border: 1px solid rgba(255 255 255 / 10%);
-  box-shadow: 0 15px 15px rgba(0 0 0 / 25%);
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
-  opacity: 0;
-  scale: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: calc(var(--main-transition) * 2);
-}
-.box-team .glass::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  background-color: rgba(255 255 255 / 5%);
-}
-.box-team:hover {
-  transform: rotate(-15deg);
-}
-.box-team:hover .glass {
-  opacity: 1;
-  scale: 1;
-  transform: rotate(20deg);
-}
-.box-team .glass h3 {
-  font-size: 1.7rem;
-  color: var(--text-color-primary);
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 0.8em;
-}
-.box-team .glass h3 span {
-  display: block;
-  color: var(--main-color);
-  font-weight: bold;
-  letter-spacing: 0;
-  font-size: 0.8rem;
-  margin-top: 8px;
-}
-.box-team ul {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-.box-team ul a {
-  color: #fff7;
-  font-size: 1.25rem;
-  scale: 0;
-  transition: var(--main-transition);
-  transition-delay: scale calc(0.2s * var(--i));
-}
-.box-team:hover ul a {
-  scale: 1;
-}
-.box-team:hover ul a:hover {
-  color: var(--text-color-primary);
-}
-/* End Team */
 /* Start Skills */
 .skills {
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color-alt);
   overflow-x: hidden ;
 }
 .skills .container {
@@ -866,7 +726,7 @@ div.img2 {
 .services {
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color-alt);
+  background-color: var(--secondary-color);
 }
 .services .container {
   display: grid;
@@ -969,7 +829,7 @@ div.img2 {
 .works {
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color-alt);
 }
 .works .container {
   display: flex;
@@ -1061,7 +921,7 @@ div.img2 {
 .events {
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color-alt);
+  background-color: var(--secondary-color);
   overflow: hidden;
 }
 .events .container {
@@ -1302,7 +1162,7 @@ div.img2 {
 .projects {
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color-alt);
   overflow: hidden;
   position: relative;
 }
@@ -1428,7 +1288,7 @@ div.img2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: var(--secondary-color-alt);
+  background: var(--secondary-color);
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
 }

@@ -14,8 +14,7 @@ https://monster-az.netlify.app/
 - Articles: 8 interactive 3D cards (flip to read more) — each card contains a short summary and topic (HTML, CSS, JS, architecture, tips)  
 - Gallery: 8 projects with hover canvas effects, short descriptions, demo links, tech used & completion date  
 - Features: three highlight cards (Time, Passion, Quality) with advanced CSS/JS effects  
-- Testimonials: Swiper.js carousel with custom behaviors  
-- Team Members: team section with CSS & JS effects (placeholder images for now)  
+- Testimonials: Swiper.js carousel with custom behaviors   
 - Skills: animated skills visualization with Lottie & CSS/JS effects  
 - Services: six service offerings presented with creative CSS & JS-driven interactions (clip-path, layered animations)  
 - How It Works: Lottie-supported steps + three cards (Business analysis, Architecture, Development)  
