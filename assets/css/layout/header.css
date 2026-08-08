@@ -6,9 +6,6 @@
   height: 70px;
   width: 100%;
   z-index: 999;
-  backdrop-filter: blur(10px);
-  background-color: rgba(var(--rgb-secondary-color) / 20%);
-  border-bottom: 2px solid rgba(var(--rgb-main-color) / 13%);
 }
 .navbar .container {
   display: flex;
@@ -84,7 +81,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color:var(--main-color);
+  background-color: var(--main-color);
   transition: var(--section-transition);
 }
 .navbar .nav-links > li > a:hover {
@@ -100,7 +97,7 @@
   padding: 30px;
   left: 0;
   top: 100%;
-  background-color: rgba(var(--rgb-secondary-color) / 92%);
+  background-color: rgba(var(--rgb-secondary-color) / 50%);
   backdrop-filter: blur(10px);
   border-bottom: 3px solid var(--main-color);
   display: flex;
@@ -153,7 +150,7 @@
   left: 0;
   height: 100%;
   width: 0;
-  background-color: var(--secondary-color-alt);
+  background-color: rgba(30 30 30/ 65%);
   z-index: -1;
   transition: var(--main-transition);
 }

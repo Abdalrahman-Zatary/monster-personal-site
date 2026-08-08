@@ -32,6 +32,11 @@
     <link rel="stylesheet" href="./assets/css/components/loading.css">
     
 		<!-- Googl Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
     <!-- All -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -119,28 +124,36 @@
     <!-- End Navbar-->
     <!-- Start Hero -->
     <main class="hero">
-      <div class="container">
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
         <div class="hero-content">
-          <div class="hero-text">
-            <h1>CODE THE FUTURE WITH MONSTER</h1>
-            <h2>Frontend Developer</h2>
-            <p>I’m Abdulrahman Zatary, a mid-level Frontend Developer focused on modern web design.
-            I work with HTML, CSS, JavaScript, and libraries like Tailwind and Bootstrap, 
-            while currently learning React. My work stands out through clean design, attention to detail,
-            and smooth animations. I enjoy large-scale projects and aim to reach a very advanced level in this field.</p>
-            <div class="btn-group">
-              <a href="#gallery" class="btn-hero btn-primary">
-                <i class="fas fa-rocket"></i> View Projects
-              </a>
-              <a href="#discount" class="btn-hero">
-                <i class="fas fa-paper-plane"></i> Contact Me
-              </a>
-            </div>
+          <div class="hero-title">
+            <h1>
+              Digital
+              <span>Experiences</span>
+            </h1>
           </div>
-          <div class="profile-container">
-            <div class="profile-wrapper">
-              <img src="./assets/images/Hero/hero-abdo.webp" alt="Profile" class="profile-img">
-            </div>
+          <div class="hero-role">
+            <span class="role-text" id="heroRoleText" aria-live="polite">
+              Frontend Developer
+            </span>
+            <span class="role-prefix">2 years of learning</span>
+          </div>
+          <div class="hero-description">
+            <p>
+              I’m Abd Alrahman Zatary, a Frontend Developer with a
+              Mechatronics Engineering background. I create modern,
+              interactive web experiences where clean interface design,
+              animation, and real-world functionality come together.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a href="#gallery" class="hero-link">
+              View Projects
+            </a>
+            <a href="#discount" class="hero-link">
+              Contact Me
+            </a>
           </div>
         </div>
       </div>
@@ -1369,6 +1382,8 @@
     <!-- Loading Page -->
     <script src="./assets/js/components/loading.js"></script>
 
+    <!-- Hero Effect -->
+    <script src="./assets/js/modules/hero-effect.js"></script>
     <!-- libs -->
     <!-- font awsome -->
     <script src="./assets/js/libs/all.min.js"></script>
