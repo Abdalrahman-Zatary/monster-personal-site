@@ -1189,21 +1189,23 @@
             </div>
           </div>
           <article class="text">
-            <h2>Tech Masters Event 2026</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut
-              adipisci quam ratione aliquam excepturi nulla in harum, veritatis porro Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Impedit, quidem doloribus adipisci animi aperiam reiciendis?
+            <h2 id="eventTitle">Countdown To Graduation 🎓</h2>
+            <p id="eventDesc">
+              I'm counting down the days left on my B.Sc. in Mechatronics Engineering at the
+              University of Aleppo. Once this hits zero, I'm officially a graduate — and going
+              all-in on frontend development. The rings above track it live: seconds, minutes and
+              hours tick like a normal clock, while the days ring climbs toward the big day.
             </p>
           </article>
         </div>
         <div class="subscribe">
-          <form action="">
-            <input type="email" name="mail" placeholder="Enter Your Email">
+          <form id="subscribeForm" action="#" novalidate>
+            <input type="email" id="subscribeEmail" name="mail" placeholder="Enter Your Email" required>
             <div class="submit">
               <input type="submit" name="send" value="Subscribe">
-            </div> 
+            </div>
           </form>
+          <p id="subscribeFeedback" class="form-feedback" aria-live="polite"></p>
         </div>
       </div>
     </section>
@@ -1248,20 +1250,21 @@
         <div class="curved-shape-sec"></div>
         <div class="form-box login">
           <h2 class="animation" style="--D: 0; --S: 21;">About me</h2>
-          <form action="#">
+          <form id="aboutMeForm" action="#" novalidate>
             <div class="input-box animation" style="--D: 1; --S: 22;">
-              <input type="text" required>
-              <label for="">Username</label>
+              <input type="text" id="aboutMeUsername" required>
+              <label for="aboutMeUsername">Username</label>
               <i class="fas fa-user"></i>
             </div>
             <div class="input-box animation" style="--D: 2; --S: 23;">
-              <input type="text" required>
-              <label for="">Massage</label>
+              <input type="text" id="aboutMeMessage" required>
+              <label for="aboutMeMessage">Message</label>
               <i class="fa-regular fa-envelope"></i>
             </div>
             <div class="input-box animation" style="--D: 3; --S: 24;">
-              <button class="btn-form" type="submit">Send</button>
+              <button class="btn-form" type="submit" id="aboutMeSubmit">Send</button>
             </div>
+            <p id="aboutMeFeedback" class="form-feedback" aria-live="polite"></p>
             <div class="regi-link animation" style="--D: 4; --S: 25;">
               <p>To contect the company ? <a class="sign-up-link">Work for</a></p>
             </div>
@@ -1470,6 +1473,9 @@
       }
     </script>
     <script src="./assets/js/modules/footer-effect.js"></script>
+
+    <script src="./assets/js/modules/events-countdown.js"></script>
+    <script src="./assets/js/modules/contact-forms.js"></script>
 
     <script src="./assets/js/main.js"></script>
 	</body>
