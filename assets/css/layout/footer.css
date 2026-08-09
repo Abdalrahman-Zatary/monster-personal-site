@@ -94,6 +94,11 @@ canvas#neuro {
 .footer nav ul li:hover a {
   color: var(--text-color-primary);
 }
+.footer .details-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .footer .box .line {
   color: var(--text-color-secondary);
   display: flex;

@@ -28,7 +28,7 @@
 }
 .hero-title {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: -3%;
   transform: translateY(-50%);
   z-index: 3;
@@ -54,6 +54,7 @@
 }
 .hero-title h1 span {
   margin-left: 0.35em;
+  margin-bottom: 1.15rem;
 }
 .hero-role {
   position: absolute;
