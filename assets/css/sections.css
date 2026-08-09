@@ -1157,6 +1157,21 @@ div.img2 {
 .events .subscribe form .submit:hover::before {
   top: 0;
 }
+.events .subscribe form input[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.events .subscribe form input[type="email"].input-shake {
+  animation: inputShake 1s ease;
+  box-shadow: 0 0 0 2px #ffb020;
+}
+.timing.timing-ended {
+  opacity: 0;
+  pointer-events: none;
+}
+#clock.timing {
+  transition: opacity 0.4s ease;
+}
 /* End Events */
 /* Start Projects */
 .projects {
@@ -1608,3 +1623,57 @@ div.img2 {
 }
 /* End Responsev */
 /* End Discount */
+
+/* Start Form Feedback */ 
+.form-feedback {
+  min-height: 18px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--text-color-secondary);
+  transition: color 0.3s ease;
+}
+
+.form-feedback.is-success {
+  color: #2ecc71;
+}
+
+.form-feedback.is-error {
+  color: #ffb020;
+}
+
+.btn-form:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.input-box input.input-shake {
+  animation: inputShake 1s ease;
+  border-bottom-color: #ffb020;
+}
+
+@keyframes inputShake {
+
+  10%,
+  90% {
+    transform: translateX(-1px);
+  }
+
+  20%,
+  80% {
+    transform: translateX(2px);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translateX(-4px);
+  }
+
+  40%,
+  60% {
+    transform: translateX(4px);
+  }
+}
+
+/* End Form Feedback */
