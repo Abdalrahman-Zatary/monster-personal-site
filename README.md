@@ -3,7 +3,7 @@
 Monster is my official personal portfolio — a single-page interactive experience that showcases my work, my process, and the team I collaborate with. This site blends modern UI, high-quality animations, and robust front-end engineering: 3D article cards, a filterable gallery, canvas-powered hover effects, Swiper carousels, Lottie illustrations, and GSAP scroll-driven animations.
 
 ## Screenshots
-![Desktop Screenshot](./assets/images/Gallrey/mode/monster-full-red.jpg)
+![Desktop Screenshot](./assets/images/screenshot.jpg)
 
 ## Demo 
 https://monster-az.netlify.app/
