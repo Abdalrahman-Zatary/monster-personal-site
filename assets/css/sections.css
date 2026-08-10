@@ -639,7 +639,7 @@ div.img2 {
 .skills {
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color-alt);
+  background-color: var(--secondary-color);
   overflow-x: hidden ;
 }
 .skills .container {
@@ -726,7 +726,7 @@ div.img2 {
 .services {
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color-alt);
 }
 .services .container {
   display: grid;
@@ -829,7 +829,7 @@ div.img2 {
 .works {
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color-alt);
+  background-color: var(--secondary-color);
 }
 .works .container {
   display: flex;
@@ -921,7 +921,7 @@ div.img2 {
 .events {
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color-alt);
   overflow: hidden;
 }
 .events .container {
@@ -1177,7 +1177,7 @@ div.img2 {
 .projects {
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
-  background-color: var(--secondary-color-alt);
+  background-color: var(--secondary-color);
   overflow: hidden;
   position: relative;
 }
@@ -1303,7 +1303,7 @@ div.img2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: var(--secondary-color);
+  background: var(--secondary-color-alt);
   padding-top: var(--scetion-padding-top);
   padding-bottom: var(--scetion-padding-bottom);
 }
