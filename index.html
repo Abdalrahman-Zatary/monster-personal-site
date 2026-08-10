@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="is-loading">
 	<head>
 		<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./assets/css/base/varibles.css">
 
     <!-- components loading -->
-    <link rel="stylesheet" href="./assets/css/components/loading.css">
+    <link rel="stylesheet" href="./assets/css/components/loader.css">
     
 		<!-- Googl Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,16 +64,101 @@
     <link rel="stylesheet" href="./assets/css/sections.css">
 		<title>Monster</title>
 	</head>
-	<body id="app" class="redmode">
-    <!-- Start Loading -->
-    <div class="loading" role="status" aria-live="polite" aria-label="Loading">
-      <div class="container-loading">
-        <div class="box-load">
-          <div class="cube"></div>
+	<body id="app" class="redmode is-loading" aria-busy="true">
+    <!-- Start Loader -->
+    <div class="loader" role="status" aria-label="Loading portfolio">
+      <div class="count-wrapper">
+        <div class="count">
+          <div class="digit">
+            <h1>9</h1>
+          </div>
+          <div class="digit">
+            <h1>8</h1>
+          </div>
+          <div class="digit">
+            <h1>7</h1>
+          </div>
+          <div class="digit">
+            <h1>4</h1>
+          </div>
+          <div class="digit">
+            <h1>2</h1>
+          </div>
+          <div class="digit">
+            <h1>0</h1>
+          </div>
         </div>
       </div>
+      <div class="count-wrapper">
+        <div class="count">
+          <div class="digit">
+            <h1>9</h1>
+          </div>
+          <div class="digit">
+            <h1>5</h1>
+          </div>
+          <div class="digit">
+            <h1>9</h1>
+          </div>
+          <div class="digit">
+            <h1>7</h1>
+          </div>
+          <div class="digit">
+            <h1>4</h1>
+          </div>
+          <div class="digit">
+            <h1>0</h1>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Star 1 -->
+      <div class="revealer revealer-1">
+        <svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M-7.51836e-06 172L97.6202 169.159C136.649 168.022 168.022 136.649 169.158 97.6202L172 2.29992e-05L174.841 97.6202C175.978 136.649 207.351 168.022 246.38 169.159L344 172L246.38 174.841C207.351 175.978 175.978 207.351 174.841 246.38L172 344L169.159 246.38C168.022 207.351 136.649 175.978 97.6202 174.842L-7.51836e-06 172Z"
+            fill="#ffffff" />
+        </svg>
+      </div>
+    
+      <!-- Star 2 -->
+      <div class="revealer revealer-2">
+        <svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M-7.51836e-06 172L97.6202 169.159C136.649 168.022 168.022 136.649 169.158 97.6202L172 2.29992e-05L174.841 97.6202C175.978 136.649 207.351 168.022 246.38 169.159L344 172L246.38 174.841C207.351 175.978 175.978 207.351 174.841 246.38L172 344L169.159 246.38C168.022 207.351 136.649 175.978 97.6202 174.842L-7.51836e-06 172Z"
+            fill="#e51e18" />
+        </svg>
+      </div>
+    
+      <!-- Star 3 -->
+      <div class="revealer revealer-3">
+        <svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M-7.51836e-06 172L97.6202 169.159C136.649 168.022 168.022 136.649 169.158 97.6202L172 2.29992e-05L174.841 97.6202C175.978 136.649 207.351 168.022 246.38 169.159L344 172L246.38 174.841C207.351 175.978 175.978 207.351 174.841 246.38L172 344L169.159 246.38C168.022 207.351 136.649 175.978 97.6202 174.842L-7.51836e-06 172Z"
+            fill="#121212" />
+        </svg>
+      </div>
+    
+      <!-- Final Cutout -->
+      <div class="revealer revealer-4">
+        <svg width="100%" height="100%" viewBox="0 0 344 344" preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <mask id="loader-cutout" maskUnits="userSpaceOnUse" x="0" y="0" width="344" height="344">
+              <!-- White = black overlay -->
+              <rect x="0" y="0" width="344" height="344" fill="white" />
+    
+              <!-- Black = transparent hole -->
+              <path class="cutout-path"
+                d="M-7.51836e-06 172L97.6202 169.159C136.649 168.022 168.022 136.649 169.158 97.6202L172 2.29992e-05L174.841 97.6202C175.978 136.649 207.351 168.022 246.38 169.159L344 172L246.38 174.841C207.351 175.978 175.978 207.351 174.841 246.38L172 344L169.159 246.38C168.022 207.351 136.649 175.978 97.6202 174.842L-7.51836e-06 172Z"
+                fill="black" />
+            </mask>
+          </defs>
+          <rect x="0" y="0" width="344" height="344" fill="#121212" mask="url(#loader-cutout)" />
+        </svg>
+      </div>
     </div>
-    <!-- End Loading -->
+    <!-- End Loader -->
     <!-- Start Navbar-->
 		<header class="navbar">
       <div class="container">
@@ -1376,7 +1461,7 @@
     <!-- End Footer -->
 
     <!-- Loading Page -->
-    <script src="./assets/js/components/loading.js"></script>
+    <script src="./assets/js/components/loader.js"></script>
 
     <!-- Hero Effect -->
     <script src="./assets/js/modules/hero-effect.js"></script>
@@ -1469,6 +1554,8 @@
 
     <script src="./assets/js/modules/events-countdown.js"></script>
     <script src="./assets/js/modules/contact-forms.js"></script>
+
+    <script src="./assets/js/components/loader.js"></script>
 
     <script src="./assets/js/main.js"></script>
 	</body>
